@@ -5,7 +5,7 @@
         Act act = new Act();
         //act.Homework1();
         //act.Homework2();
-        act.Homework3();
+        act.Homework4();
     }
 }
 
@@ -63,10 +63,25 @@ class Act
 
             strings[i] = Console.ReadLine();
         }
+        //Array.Reverse(strings);
        for (int i = n-1; i >=0; i--)
        {
             Console.WriteLine(strings[i]);
        }
+
+    }
+
+    public void Homework4()
+    {
+         Console.Write("bir cümle giriniz: ");
+        string x = Console.ReadLine();
+        string[] arry = x.Split(" ");
+        string xnew = string.Join("", arry);
+
+        int amountWord = arry.Length;
+        int amountchar = xnew.Length;
+
+        Console.WriteLine($"{amountWord}  {amountchar}");
 
     }
 }
